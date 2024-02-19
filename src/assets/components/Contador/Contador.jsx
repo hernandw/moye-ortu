@@ -13,6 +13,8 @@ function Countdown() {
     seconds: 0,
   });
 
+ 
+
   // Crear la referencia para el intervalo
   const intervalRef = useRef();
 

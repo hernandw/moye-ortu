@@ -9,19 +9,19 @@ const faqs = [
   },
   {
     id: 2,
-    question: "¿Qué es la fecha de la Ceremonia?",
+    question: "¿Cuál es la fecha de la Ceremonia?",
     answer: "La fecha de la ceremonia es el 28 de marzo de 2024.",
   },
   {
     id: 3,
     question: "¿Cuál es la hora de la Recepción?",
-    answer: "La hora de la recepción será de 14 a 18 hs.",
+    answer: "La hora de la recepción será de 14 a 18 hrs.",
   },
   {
     id: 4,
     question: "¿Cuál es el lugar de la Recepción?",
     answer:
-      "El lugar de la recepción es el Restaurant Estragon. La Fabrica, loteo 4, Los Pangues, Puerto Varas. Los Lagos",
+      "El lugar de la recepción es el Restaurante Estragón. camino Ensenada KM 6.9 Puerto Varas.",
   },
   {
     id: 5,
@@ -62,24 +62,14 @@ const faqs = [
     question: "¿A qué hora termina la recepción?",
     answer: "La recepción en el Restaurant Estragon termina a las 18 hrs.",
   },
-  {
-    id: 12,
-    question: "¿Habrá fiesta despues de la recepción?",
-    answer:
-      "No. Despues de la recepción nos iremos al Aeropuerto porque salimos de viaje de luna de miel.",
-  },
+
   {
     id: 13,
     question: "¿Habrá menú Vegetariano/Gluten Free?",
     answer:
       "Te pedimos al momento de confirmar tu asistencia a la recepción indiques por la página web si eres vegetariano o intolerante al gluten.",
   },
-  {
-    id: 14,
-    question: "¿Tendrá algún costo el menú de la recepción?",
-    answer:
-      "No. El costó del menú será asumido por los contrayentes a las personas que fueron invitadas y confirmadas.",
-  },
+
   {
     id: 15,
     question: "¿Puedo llevar a alguien más si no está en la invitación?",
@@ -94,7 +84,7 @@ const faqs = [
   },
   {
     id: 17,
-    question: "El lugar de recepción es cerrado o abierto",
+    question: "¿El lugar de recepción es cerrado o abierto'",
     answer:
       "El almuerzo está planificado en un lugar cerrado con estacionamiento, aunque tiene el disfrutes de áreas verde si el clima lo permite.",
   },

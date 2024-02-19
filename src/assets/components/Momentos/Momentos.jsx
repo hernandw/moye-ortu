@@ -1,66 +1,5 @@
 import './Momentos.css'
-/* const fotos = [
-  {
-    id: 1,
-    src: "../../images/gallery_1.jpg",
-    alt: "Foto 1",
-  },
-  {
-    id: 2,
-    src: "../../images/gallery_2.jpg",
-    alt: "Foto 2",
-  },
-  {
-    id: 3,
-    src: "../../images/gallery_3.jpg",
-    alt: "Foto 3",
-  },
-  {
-    id: 4,
-    src: "../../images/gallery_14.jpg",
-    alt: "Foto 4",
-  },
-  {
-    id: 5,
-    src: "../../images/gallery_5.jpg",
-    alt: "Foto 5",
-  },
-  {
-    id: 6,
-    src: "../../images/gallery_6.jpg",
-    alt: "Foto 6",
-  },
-  {
-    id: 7,
-    src: "../../images/gallery_7.jpg",
-    alt: "Foto 7",
-  },
-  {
-    id: 8,
-    src: "../../images/gallery_8.jpg",
-    alt: "Foto 8",
-  },
-  {
-    id: 9,
-    src: "../../images/gallery_9.jpg",
-    alt: "Foto 9",
-  },
-  {
-    id: 10,
-    src: "../../images/gallery_10.jpg",
-    alt: "Foto 10",
-  },
-  {
-    id: 11,
-    src: "../../images/gallery_11.jpg",
-    alt: "Foto 11",
-  },
-  {
-    id: 12,
-    src: "../../images/gallery_12.jpg",
-    alt: "Foto 12",
-  },
-]; */
+
 
 import foto1 from "../../images/gallery_1.jpg";
 import foto2 from "../../images/gallery_2.jpg";
@@ -77,56 +16,118 @@ import foto12 from "../../images/gallery_12.jpg";
 
 
 const Momentos = () => {
+
+  const handleModal = () => {
+    document.addEventListener("click", (e) => {
+      console.log(e.target.getAttribute("src"))
+      console.log(e.target.classList.contains("modal-img"))
+      if(e.target.getAttribute("src")){
+        const src = e.target.getAttribute("src");
+        
+        document.querySelector(".modal-bod").src = src
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'))
+        myModal.show()
+      }
+    })
+  }
   return (
     <div
       id="momentos"
-      className="bg-white text-center py-5 container__momentos"
+      className="bg-white text-center py-3 container__momentos"
     >
+      <div className="text-center">
+        <img
+          src="https://img.icons8.com/plasticine/100/apple-photos.png"
+          alt=""
+        />
+      </div>
       <h2>ÁLBUM DE FOTOS</h2>
       <p>Momentos únicos</p>
       <div className="galeria">
-        {/*  {fotos.map((foto) => (
-            <div key={foto.id} className="">
-                <img src={foto.src} alt={foto.alt} />
-            </div>
-        ))} */}
-        <div className="">
-          <img src={foto1} alt="" />
+        <div className="gallery-item">
+          <img className="modal-img" onClick={handleModal} src={foto1} alt="" />
+        </div>
+        <div className="gallery-item">
+          <img className="modal-img" onClick={handleModal} src={foto2} alt="" />
         </div>
         <div className="">
-          <img src={foto2} alt="" />
+          <img className="modal-img" onClick={handleModal} src={foto3} alt="" />
         </div>
         <div className="">
-          <img src={foto3} alt="" />
+          <img className="modal-img" onClick={handleModal} src={foto4} alt="" />
         </div>
         <div className="">
-          <img src={foto4} alt="" />
+          <img className="modal-img" onClick={handleModal} src={foto5} alt="" />
         </div>
         <div className="">
-          <img src={foto5} alt="" />
+          <img className="modal-img" onClick={handleModal} src={foto6} alt="" />
         </div>
         <div className="">
-          <img src={foto6} alt="" />
+          <img className="modal-img" onClick={handleModal} src={foto7} alt="" />
         </div>
         <div className="">
-          <img src={foto7} alt="" />
-        </div>
-        <div className="">
-          <img src={foto8} alt="" />
+          <img className="modal-img" onClick={handleModal} src={foto8} alt="" />
         </div>
         <div className="">
           <img src={foto9} alt="" />
         </div>
         <div className="">
-          <img src={foto10} alt="" />
+          <img
+            className="modal-img"
+            onClick={handleModal}
+            src={foto10}
+            alt=""
+          />
         </div>
         <div className="">
-          <img src={foto11} alt="" />
+          <img
+            className="modal-img"
+            onClick={handleModal}
+            src={foto11}
+            alt=""
+          />
         </div>
         <div className="">
-          <img src={foto12} alt="" />
+          <img
+            className="modal-img"
+            onClick={handleModal}
+            src={foto12}
+            alt=""
+          />
         </div>
+      </div>
+      <hr className="mt-5 border-2" />
 
+      <div>
+        <div
+          className="modal fade"
+          id="gallery-modal"
+          tabIndex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content">
+              <div className="modal-header">
+                {/* <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1> */}
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="true"
+                ></button>
+              </div>
+              {/* <div className="modal-body">...</div> */}
+              <div className="modal-body">
+                <img
+                  src="https://placedog.net/640/640"
+                  className="modal-bod w-100"
+                  alt="modal img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

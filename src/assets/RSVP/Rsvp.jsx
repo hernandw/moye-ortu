@@ -1,27 +1,33 @@
-import { useRef } from "react";
+
 import "./Rsvp.css";
 import emailjs from "@emailjs/browser";
-
-
+import { useForm } from "react-hook-form";
 
 const Rsvp = () => {
-    const refForm = useRef();
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const serviceId = "service_5u9sbr4";
-        const templateId = "template_o00avvn";
-        const apikey = "x05PjI5B3znhPmtRb";
-        emailjs.sendForm(serviceId, templateId, refForm.current, apikey)
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  
+  const onSubmit = (data) => {
+    const serviceId = "service_5u9sbr4";
+    const templateId = "template_o00avvn";
+    const apikey = "x05PjI5B3znhPmtRb";
+     
+        emailjs.send(serviceId, templateId, data, apikey)
           .then((result) => {
               alert("Gracias por confirmar su asistencia", result);
               window.location.reload();
           }).catch((error) => {
             alert("Error al confirmar su asistencia", error);
           })
-
-    }
+  };
   return (
-    <div id="confirmar" className="rsvp__container py-5 text-white container">
+    <div
+      id="confirmar"
+      className="rsvp__container py-5 px-4 text-white container"
+    >
       <div className="d-flex justify-content-center">
         <img className="icon__rsvp" src="" alt="" />
       </div>
@@ -29,8 +35,8 @@ const Rsvp = () => {
       <p className="text-center pb-5">
         Será un placer para nosotros contar con tu presencia
       </p>
-      <div className="container bg-white rounded-3 py-5 text-black">
-        <form onSubmit={handleSubmit} ref={refForm}>
+      <div className="container bg-white rounded-3 py-5 text-black px-4 formulario">
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-3">
             <label htmlFor="username" className="form-label">
               Nombre y Apellido:
@@ -41,7 +47,17 @@ const Rsvp = () => {
               id="username"
               placeholder="Ej. Manuel Ortunio"
               name="username"
+              {...register("username", {
+                required: true,
+                pattern: /^[A-Za-z\s]+$/,
+              })}
             />
+            {errors.username?.type === "required" && (
+              <p className="text-danger fw-bold">El campo es requerido</p>
+            )}
+            {errors.username?.type === "pattern" && (
+              <p className="text-danger fw-bold">El campo solo acepta letras</p>
+            )}
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
@@ -53,7 +69,17 @@ const Rsvp = () => {
               id="email"
               placeholder="name@example.com"
               name="email"
+              {...register("email", {
+                required: true,
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              })}
             />
+            {errors.email?.type === "required" && (
+              <p className="text-danger fw-bold">El campo es requerido</p>
+            )}
+            {errors.email?.type === "pattern" && (
+              <p className="text-danger fw-bold">El formato es incorrecto</p>
+            )}
           </div>
           <div className="mb-3">
             <label htmlFor="asunto" className="form-label">
@@ -65,7 +91,18 @@ const Rsvp = () => {
               id="asunto"
               placeholder="Confirmación de Asistencia"
               name="subject"
+              {...register("subject", {
+                required: true,
+                pattern: /^[A-Za-z\s]+$/,
+              })}
             />
+            {errors.subject?.type === "required" && (
+              <p className="text-danger fw-bold">El campo es requerido</p>
+    
+            )}
+            {errors.subject?.type === "pattern" && (
+              <p className="text-danger fw-bold">El campo solo acepta letras</p>
+            )}
           </div>
           <div className="mb-3">
             <label htmlFor="message" className="form-label">
@@ -77,6 +114,7 @@ const Rsvp = () => {
               name="message"
               placeholder="Escriba su mensaje"
               rows="3"
+              {...register("message")}
             ></textarea>
           </div>
           <div className="d-flex justify-content-center">

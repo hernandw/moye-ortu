@@ -3,10 +3,11 @@ import Rsvp from './assets/RSVP/Rsvp';
 import Date from './assets/components/Date/Date';
 import Faqs from './assets/components/Faqs/Faqs';
 import Festejo from './assets/components/Festejo/Festejo';
+import Footer from './assets/components/Footer/Footer';
 import Header from './assets/components/Header/Header';
 import Historia from './assets/components/Historia/Historia';
 import Momentos from './assets/components/Momentos/Momentos';
-import Padrinos from './assets/components/Padrinos/Padrinos';
+
 
 
 
@@ -20,9 +21,10 @@ const App = () => {
       <Festejo />
       <Historia />
       <Momentos />
-      <Padrinos />
+      
       <Faqs />
       <Rsvp />
+      <Footer />
       
       
     </>

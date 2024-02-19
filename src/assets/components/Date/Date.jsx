@@ -5,8 +5,18 @@ import './Date.css'
 
 const Date = () => {
   
+
+
+
   return (
     <div id="agenda">
+      <div className='text-center pt-3'>
+        <img
+          className="overtime"
+          src="https://img.icons8.com/plasticine/100/overtime.png"
+          alt=""
+        />
+      </div>
       <h1 className="text-center py-4 color">AGENDA LA FECHA</h1>
       <p className="text-center py-4">Jueves, 28 de Marzo 2024</p>
       <div>
@@ -39,7 +49,6 @@ const Date = () => {
           ></AddToCalendarButton>
         </button>
       </div>
-      
     </div>
   );
 }

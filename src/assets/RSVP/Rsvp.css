@@ -1,13 +1,32 @@
 .bg-boton {
-    background-color: #e2bf83;
-    color: white;
-    width: 100%;
-    padding: 10px;
-    
+  background-color: #e2bf83;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+.bg-boton:hover {
+  background-color: #e2bf83;
+  color: white;
+  width: 100%;
+  padding: 10px;
 }
 
-.icon__rsvp{
-width: 70px;
+.icon__rsvp {
+  width: 70px;
+}
+
+@media (min-width: 768px) {
+  .rsvp__container {
+    padding: 0 200px;
+  }
+  .formulario {
+    width: 600px;
+  }
+}
 
 
+@media (min-width: 1024px) {
+  .formulario {
+    width: 800px;
+  }
 }

@@ -11,9 +11,9 @@ const Festejo = () => {
       <h1 className="text-center title">Recepción</h1>
       <div>
         <p className="text-2xl text-center text-event">14:00 - 18:00</p>
-        <p className="text-2xl text-center text-event">Restaurant Estragon</p>
+        <p className="text-2xl text-center text-event">Estragón Restaurante</p>
         <p className="text-2xl text-center text-event">
-          La fábrica, loteo 4, Los pangues, Puerto Varas, Los Lagos.
+          Camino Ensenada Km 6.9 Puerto Varas
         </p>
         <div>
           <button className="button">
