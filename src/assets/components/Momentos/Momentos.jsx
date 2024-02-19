@@ -1,5 +1,4 @@
-import './Momentos.css'
-
+import "./Momentos.css";
 
 import foto1 from "../../images/gallery_1.jpg";
 import foto2 from "../../images/gallery_2.jpg";
@@ -14,22 +13,25 @@ import foto10 from "../../images/gallery_10.jpg";
 import foto11 from "../../images/gallery_11.jpg";
 import foto12 from "../../images/gallery_12.jpg";
 
-
 const Momentos = () => {
-
   const handleModal = () => {
     document.addEventListener("click", (e) => {
-      console.log(e.target.getAttribute("src"))
-      console.log(e.target.classList.contains("modal-img"))
-      if(e.target.getAttribute("src")){
+      console.log(e.target.getAttribute("src"));
+      console.log(e.target.classList.contains("modal-img"));
+      if (e.target.getAttribute("src")) {
         const src = e.target.getAttribute("src");
-        
-        document.querySelector(".modal-bod").src = src
-        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'))
-        myModal.show()
+
+        document.querySelector(".modal-bod").src = src;
+
+        const myModal = new bootstrap.Modal(
+          document.getElementById("gallery-modal")
+        );
+        myModal.show();
+      } else {
+        window.location.reload();
       }
-    })
-  }
+    });
+  };
   return (
     <div
       id="momentos"
@@ -50,28 +52,28 @@ const Momentos = () => {
         <div className="gallery-item">
           <img className="modal-img" onClick={handleModal} src={foto2} alt="" />
         </div>
-        <div className="">
+        <div>
           <img className="modal-img" onClick={handleModal} src={foto3} alt="" />
         </div>
-        <div className="">
+        <div>
           <img className="modal-img" onClick={handleModal} src={foto4} alt="" />
         </div>
-        <div className="">
+        <div>
           <img className="modal-img" onClick={handleModal} src={foto5} alt="" />
         </div>
-        <div className="">
+        <div>
           <img className="modal-img" onClick={handleModal} src={foto6} alt="" />
         </div>
-        <div className="">
+        <div>
           <img className="modal-img" onClick={handleModal} src={foto7} alt="" />
         </div>
-        <div className="">
+        <div>
           <img className="modal-img" onClick={handleModal} src={foto8} alt="" />
         </div>
-        <div className="">
-          <img src={foto9} alt="" />
+        <div>
+          <img className="modal-img" onClick={handleModal} src={foto9} alt="" />
         </div>
-        <div className="">
+        <div>
           <img
             className="modal-img"
             onClick={handleModal}
@@ -79,7 +81,7 @@ const Momentos = () => {
             alt=""
           />
         </div>
-        <div className="">
+        <div>
           <img
             className="modal-img"
             onClick={handleModal}
@@ -87,7 +89,7 @@ const Momentos = () => {
             alt=""
           />
         </div>
-        <div className="">
+        <div>
           <img
             className="modal-img"
             onClick={handleModal}
@@ -131,6 +133,6 @@ const Momentos = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Momentos
+export default Momentos;
