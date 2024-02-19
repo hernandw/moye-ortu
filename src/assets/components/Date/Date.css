@@ -1,0 +1,14 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-cal {
+  background-color: #8d415d;
+  border: none;
+  padding-top: 20px;
+}
+
+.linea {
+  border-bottom: 2px solid #e2bf83;
+  
+}

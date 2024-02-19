@@ -1,0 +1,9 @@
+.icon__padrinos {
+    width: 70px;
+}
+
+.padrinos__names {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
