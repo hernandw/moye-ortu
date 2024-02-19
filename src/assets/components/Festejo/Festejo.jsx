@@ -1,4 +1,5 @@
 import './Festejo.css'
+import festejo from '../../icons/rings.svg'
 
 
 
@@ -6,7 +7,7 @@ const Festejo = () => {
    
   return (
     <div id="recepcion" className="text-center bg-white py-5">
-      <img className="rings" src="./public/icons/rings.svg" alt="" />
+      <img className="rings" src={festejo} alt="" />
       <h1 className="text-center title">Recepción</h1>
       <div>
         <p className="text-2xl text-center text-event">14:00 - 18:00</p>

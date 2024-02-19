@@ -1,11 +1,12 @@
 import './Padrinos.css'
+import padrinos from '../../icons/padrinos.svg'
 
 const Padrinos = () => {
   return (
     <div id="padrinos" className="padrinos__container text-center py-4 px-4">
       <img
         className="icon__padrinos py-3"
-        src="./public/icons/padrinos.svg"
+        src={padrinos}
         alt="Padrinos"
       />
       <h2 className="py-3 text-center">Padrinos/Testigos</h2>

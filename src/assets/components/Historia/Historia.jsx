@@ -1,10 +1,11 @@
 import './Historia.css'
+import casamos from '../../icons/iglesia.svg'
 
 
 const Historia = () => {
   return (
       <div id="casamos" className="history__container text-center py-5 px-4">
-          <img className='icon__iglesia' src="./public/icons/iglesia.svg" alt="" />
+          <img className='icon__iglesia' src={casamos} alt="" />
       <h2 className='py-3'>¡Nos Casamos!</h2>
       <p className='pb-3'>
         Sí! nos casamos!!! ¡Estamos super felices! Nos sentimos en las nubes y
