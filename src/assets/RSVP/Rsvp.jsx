@@ -2,6 +2,8 @@ import { useRef } from "react";
 import "./Rsvp.css";
 import emailjs from "@emailjs/browser";
 
+
+
 const Rsvp = () => {
     const refForm = useRef();
     const handleSubmit = (e) => {
@@ -21,7 +23,7 @@ const Rsvp = () => {
   return (
     <div id="confirmar" className="rsvp__container py-5 text-white container">
       <div className="d-flex justify-content-center">
-        <img className="icon__rsvp" src="./public/icons/rsvp.png" alt="" />
+        <img className="icon__rsvp" src="" alt="" />
       </div>
       <h1 className="py-3 text-center">Confirmación de Asistencia</h1>
       <p className="text-center pb-5">

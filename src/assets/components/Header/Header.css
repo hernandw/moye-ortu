@@ -33,7 +33,7 @@ body,
 @keyframes banner {
   0%,
   20% {
-    background-image: url("../../images//banner1.png");
+    background-image: url("../../images/banner1.png");
   }
   25%,
   45% {
@@ -41,11 +41,11 @@ body,
   }
   50%,
   70% {
-    background-image: url("../../images//banner3.png");
+    background-image: url("../../images/banner3.png");
   }
   75%,
   100% {
-    background-image: url("../../images//banner4.png");
+    background-image: url("../../images/banner4.png");
   }
 }
 

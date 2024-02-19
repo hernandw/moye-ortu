@@ -1,4 +1,5 @@
 import "./faqs.css";
+import faqsIcon from "../../icons/faqs.svg";
 const faqs = [
   {
     id: 1,
@@ -102,7 +103,7 @@ const faqs = [
  const Faqs = () => {
   return (
     <div id="preguntas" className="text-center py-5 bg-white faqs__container">
-      <img className="icon__faqs" src="./public/icons/faqs.svg" alt="" />
+      <img className="icon__faqs" src={faqsIcon} alt="" />
       <h2 className="py-3">Preguntas Frencuentes</h2>
       <div className="container">
         <div className="accordion" id="accordionExample">
