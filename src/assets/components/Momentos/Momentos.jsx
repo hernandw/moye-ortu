@@ -1,57 +1,66 @@
 import './Momentos.css'
-const fotos = [{
+const fotos = [
+  {
     id: 1,
-    src: './public/gallery_1.jpg',
-    alt: "Foto 1"
-}, {
+    src: "../../images/gallery_1.jpg",
+    alt: "Foto 1",
+  },
+  {
     id: 2,
-    src: './public/gallery_2.jpg',
-    alt: "Foto 2"
-    },
-    {
+    src: "../../images/gallery_2.jpg",
+    alt: "Foto 2",
+  },
+  {
     id: 3,
-    src: './public/gallery_3.jpg',
-    alt: "Foto 3"
-    },
-    {
+    src: "../../images/gallery_3.jpg",
+    alt: "Foto 3",
+  },
+  {
     id: 4,
-    src: './public/gallery_14.jpg',
-    alt: "Foto 4"
-    },
-    {
+    src: "../../images/gallery_14.jpg",
+    alt: "Foto 4",
+  },
+  {
     id: 5,
-    src: './public/gallery_5.jpg',
-    alt: "Foto 5"
-    },
-    {
+    src: "../../images/gallery_5.jpg",
+    alt: "Foto 5",
+  },
+  {
     id: 6,
-    src: './public/gallery_6.jpg',
-    alt: "Foto 6"
-    }, {
+    src: "../../images/gallery_6.jpg",
+    alt: "Foto 6",
+  },
+  {
     id: 7,
-    src: './public/gallery_7.jpg',
-    alt: "Foto 7"
-    }, {
+    src: "../../images/gallery_7.jpg",
+    alt: "Foto 7",
+  },
+  {
     id: 8,
-    src: './public/gallery_8.jpg',
-    alt: "Foto 8"
-    }, {
+    src: "../../images/gallery_8.jpg",
+    alt: "Foto 8",
+  },
+  {
     id: 9,
-    src: './public/gallery_9.jpg',
-    alt: "Foto 9"
-    }, {
+    src: "../../images/gallery_9.jpg",
+    alt: "Foto 9",
+  },
+  {
     id: 10,
-    src: './public/gallery_10.jpg',
-    alt: "Foto 10"
-    }, {
+    src: "../../images/gallery_10.jpg",
+    alt: "Foto 10",
+  },
+  {
     id: 11,
-    src: './public/gallery_11.jpg',
-    alt: "Foto 11"
-    }, {
+    src: "../../images/gallery_11.jpg",
+    alt: "Foto 11",
+  },
+  {
     id: 12,
-    src: './public/gallery_12.jpg',
-    alt: "Foto 12"
-    }]
+    src: "../../images/gallery_12.jpg",
+    alt: "Foto 12",
+  },
+];
 
 const Momentos = () => {
   return (
