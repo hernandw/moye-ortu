@@ -25,11 +25,11 @@ const Momentos = () => {
 
         const myModal = new bootstrap.Modal(
           document.getElementById("gallery-modal")
+          
         );
         myModal.show();
-      } else {
-        window.location.reload();
-      }
+        
+      } 
     });
   };
   return (
@@ -73,7 +73,7 @@ const Momentos = () => {
         <div>
           <img className="modal-img" onClick={handleModal} src={foto9} alt="" />
         </div>
-        <div>
+        <div className="momentus">
           <img
             className="modal-img"
             onClick={handleModal}

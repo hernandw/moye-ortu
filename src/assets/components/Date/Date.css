@@ -12,3 +12,10 @@ body {
   border-bottom: 2px solid #e2bf83;
   
 }
+
+@media (min-width: 1024px) {
+  #agenda{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

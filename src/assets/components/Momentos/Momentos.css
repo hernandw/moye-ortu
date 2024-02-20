@@ -36,4 +36,9 @@ width: 100%;
   .galeria img {
     width: 300px;
   }
+  .galeria{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }
+

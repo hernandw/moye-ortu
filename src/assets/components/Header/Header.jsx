@@ -3,7 +3,10 @@ import './Header.css'
 const Header = () => {
   return (
     <div>
-      <nav id="menu" className="navbar navbar-expand-lg menu navbar-dark">
+      <nav
+        id="menu"
+        className="navbar navbar-expand-lg menu navbar-dark fixed-top"
+      >
         <div className="container">
           <a className="menu__title navbar-brand" href="#menu">
             Karina y Manuel
@@ -46,11 +49,7 @@ const Header = () => {
                   Momentos
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#padrinos">
-                  Padrinos
-                </a>
-              </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="#preguntas">
                   FaQs
