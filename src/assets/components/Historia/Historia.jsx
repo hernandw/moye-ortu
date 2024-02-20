@@ -9,7 +9,7 @@ const Historia = () => {
         <img className="icon__iglesia pt-5" src={casamos} alt="" />
         <h2 className="py-3">¡Nos Casamos!</h2>
         <p className="pb-3">
-          Si nos casamos!!! Estamos felices y queremos compartir este hermoso
+          Sí nos casamos!!! Estamos felices y queremos compartir este hermoso
           momento contigo, ya que nos has acompañado a lo largo de este camino.
         </p>
         <p className="pb-3">
