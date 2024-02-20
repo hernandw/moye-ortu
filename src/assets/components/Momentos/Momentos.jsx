@@ -14,25 +14,18 @@ import foto11 from "../../images/gallery_11.jpg";
 import foto12 from "../../images/gallery_12.jpg";
 
 const Momentos = () => {
-  const handleModal = () => {
-    document.addEventListener("click", (e) => {
-      console.log(e.target.getAttribute("src"));
-      console.log(e.target.classList.contains("modal-img"));
-      if (e.target.getAttribute("src")) {
-        const src = e.target.getAttribute("src");
+  const handleModal = (e) => {
+    let imagen = e.target.getAttribute("src");
+    if (imagen.length > 0) {
+      const src = e.target.getAttribute("src");
 
-        document.querySelector(".modal-bod").src = src;
+      document.querySelector(".modal-bod").src = src;
 
-        const myModal = new bootstrap.Modal(
-          document.getElementById("gallery-modal")
-          
-        );
-        myModal.show();
-        
-      } else {
-       window.location.reload();
-      }
-    });
+      const myModal = new bootstrap.Modal(
+        document.getElementById("gallery-modal")
+      );
+      myModal.show();
+    }
   };
   return (
     <div
