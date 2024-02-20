@@ -29,7 +29,9 @@ const Momentos = () => {
         );
         myModal.show();
         
-      } 
+      } else {
+       window.location.reload();
+      }
     });
   };
   return (
