@@ -4,6 +4,7 @@ body {
 
 #agenda {
   background-color: #8d415d;
+  color: white;
 }
 
 .boton-cal {
@@ -18,7 +19,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  #agenda{
+  .history__container {
     max-width: 1024px;
     margin: 0 auto;
   }

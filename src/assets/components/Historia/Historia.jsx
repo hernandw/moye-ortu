@@ -4,9 +4,9 @@ import casamos from '../../icons/iglesia.svg'
 
 const Historia = () => {
   return (
-    <div className="history__container text-center py-5 px-4">
-      <div id="casamos">
-        <img className="icon__iglesia" src={casamos} alt="" />
+    <div id="casamos" className=" text-center py-5 px-4 ">
+      <div className="history__container">
+        <img className="icon__iglesia pt-5" src={casamos} alt="" />
         <h2 className="py-3">¡Nos Casamos!</h2>
         <p className="pb-3">
           Si nos casamos!!! Estamos felices y queremos compartir este hermoso

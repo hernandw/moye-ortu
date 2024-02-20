@@ -93,8 +93,8 @@ const faqs = [
  const Faqs = () => {
   return (
     <div id="preguntas" className="text-center py-5 bg-white faqs__container">
-      <img className="icon__faqs" src={faqsIcon} alt="" />
-      <h2 className="py-3">Preguntas Frencuentes</h2>
+      <img className="icon__faqs pt-5" src={faqsIcon} alt="" />
+      <h2 className="py-5">Preguntas Frencuentes</h2>
       <div className="container">
         <div className="accordion" id="accordionExample">
                   {

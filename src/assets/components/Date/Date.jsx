@@ -9,11 +9,11 @@ const Date = () => {
 
 
   return (
-    <div className='history__container'>
+    <div >
       <div id="agenda">
-        <div className="text-center pt-3">
+        <div className="text-center pt-5 history__container">
           <img
-            className="overtime"
+            className="overtime pt-5"
             src="https://img.icons8.com/plasticine/100/overtime.png"
             alt=""
           />

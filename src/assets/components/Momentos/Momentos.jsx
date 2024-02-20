@@ -30,9 +30,9 @@ const Momentos = () => {
   return (
     <div
       id="momentos"
-      className="bg-white text-center py-3 container__momentos"
+      className="bg-white text-center py-5 container__momentos"
     >
-      <div className="text-center">
+      <div className="text-center pt-5">
         <img
           src="https://img.icons8.com/plasticine/100/apple-photos.png"
           alt=""

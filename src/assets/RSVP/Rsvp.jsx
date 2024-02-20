@@ -1,7 +1,8 @@
-
 import "./Rsvp.css";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+
+<img width="100" height="100" src="" alt="today" />;
 
 const Rsvp = () => {
   const {
@@ -9,27 +10,34 @@ const Rsvp = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
-  
+
   const onSubmit = (data) => {
     const serviceId = "service_5u9sbr4";
     const templateId = "template_o00avvn";
     const apikey = "x05PjI5B3znhPmtRb";
-     
-        emailjs.send(serviceId, templateId, data, apikey)
-          .then((result) => {
-              alert("Gracias por confirmar su asistencia", result);
-              window.location.reload();
-          }).catch((error) => {
-            alert("Error al confirmar su asistencia", error);
-          })
+
+    emailjs
+      .send(serviceId, templateId, data, apikey)
+      .then((result) => {
+        alert("Gracias por confirmar su asistencia", result);
+        window.location.reload();
+      })
+      .catch((error) => {
+        alert("Error al confirmar su asistencia", error);
+      });
   };
   return (
     <div
       id="confirmar"
       className="rsvp__container py-5 px-4 text-white container-fluid"
     >
-      <div className="d-flex justify-content-center">
-        <img className="icon__rsvp" src="" alt="" />
+      <div className="d-flex justify-content-center pt-5">
+        <div className="text-center">
+          <img
+            src="https://img.icons8.com/stickers/100/today.png"
+            alt="calendar-28"
+          />
+        </div>
       </div>
       <h1 className="py-3 text-center">Confirmación de Asistencia</h1>
       <p className="text-center pb-5">
@@ -98,7 +106,6 @@ const Rsvp = () => {
             />
             {errors.subject?.type === "required" && (
               <p className="text-danger fw-bold">El campo es requerido</p>
-    
             )}
             {errors.subject?.type === "pattern" && (
               <p className="text-danger fw-bold">El campo solo acepta letras</p>
