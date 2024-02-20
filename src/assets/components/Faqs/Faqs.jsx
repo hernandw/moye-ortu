@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     id: 17,
-    question: "¿El lugar de recepción es cerrado o abierto'",
+    question: "¿El lugar de recepción es cerrado o abierto?",
     answer:
       "El almuerzo está planificado en un lugar cerrado con estacionamiento, aunque tiene el disfrutes de áreas verde si el clima lo permite.",
   },
