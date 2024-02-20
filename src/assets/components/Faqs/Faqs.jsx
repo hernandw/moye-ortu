@@ -27,7 +27,7 @@ const faqs = [
     id: 5,
     question: "¿Están invitados los niños?",
     answer:
-      "Le pedimos cortesmente que solo invite niños si se mencionan en su confirmación",
+      "Le pedimos amablemente que solo lleve niños si se mencionan en su invitación",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const faqs = [
     id: 9,
     question: "¿Puedo tomar fotografias durante la recepción?",
     answer:
-      "Eres más que bienvenido a tomar fotografias, pero te pedimos que mantengas al mínimo y tengas en cuenta al fotógrafo/videografo que hemos contratado para capturar momentos",
+      "Eres más que bienvenido a tomar fotografias, pero te pedimos que lo mantengas al mínimo y tengas en cuenta al fotógrafo/camarógrafo que hemos contratado para capturar momentos",
   },
   {
     id: 10,

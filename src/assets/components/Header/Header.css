@@ -34,20 +34,24 @@
 
 @keyframes banner {
   0%,
-  20% {
+  15% {
     background-image: url("../../images/banner1.png");
   }
-  25%,
-  45% {
+  20%,
+  35% {
     background-image: url("../../images/banner2.png");
   }
-  50%,
-  70% {
+  40%,
+  65% {
     background-image: url("../../images/banner3.png");
   }
-  75%,
-  100% {
+  70%,
+  85% {
     background-image: url("../../images/banner4.png");
+  }
+  90%,
+  100% {
+    background-image: url("../../images/banner5.png");
   }
 }
 
