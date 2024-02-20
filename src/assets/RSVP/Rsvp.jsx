@@ -26,7 +26,7 @@ const Rsvp = () => {
   return (
     <div
       id="confirmar"
-      className="rsvp__container py-5 px-4 text-white container"
+      className="rsvp__container py-5 px-4 text-white container-fluid"
     >
       <div className="d-flex justify-content-center">
         <img className="icon__rsvp" src="" alt="" />

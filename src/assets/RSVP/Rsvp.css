@@ -11,6 +11,10 @@
   padding: 10px;
 }
 
+#confirmar {
+  background-color: #8d415d;
+}
+
 .icon__rsvp {
   width: 70px;
 }

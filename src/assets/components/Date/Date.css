@@ -2,6 +2,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#agenda {
+  background-color: #8d415d;
+}
+
 .boton-cal {
   background-color: #8d415d;
   border: none;

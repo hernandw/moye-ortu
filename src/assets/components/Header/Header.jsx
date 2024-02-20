@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div>
       <nav
-        id="menu"
+        
         className="navbar navbar-expand-lg menu navbar-dark fixed-top"
       >
         <div className="container">
@@ -25,7 +25,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#menu">
+                <a className="nav-link" href="#">
                   Inicio
                 </a>
               </li>
@@ -64,6 +64,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      
 
       <header id="inicio" className="header__container bg-white py-5">
         <div className="banner">
