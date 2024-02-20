@@ -8,7 +8,7 @@ const Header = () => {
         className="navbar navbar-expand-lg menu navbar-dark fixed-top"
       >
         <div className="container">
-          <a className="menu__title navbar-brand" href="#menu">
+          <a className="menu__title navbar-brand" href="#">
             Karina y Manuel
           </a>
           <button
